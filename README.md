@@ -186,32 +186,6 @@ cd ticket-booking-frontend
 npm install
 ```
 
----
-
-## Start Development Server
-
-```bash
-npm run dev
-```
-
-The application runs on:
-
-```
-http://localhost:5173
-```
-
----
-
-# Environment Variables
-
-By default, the frontend connects to the deployed backend.
-
-To connect to a local backend, create a `.env.local` file.
-
-```env
-VITE_API_BASE_URL=http://localhost:5000/api
-```
-
 > **Note**
 >
 > Running the backend locally requires **MongoDB Replica Set** configuration because the backend relies on multi-document transactions.
@@ -268,9 +242,6 @@ Backend Technologies:
 - Mongoose
 - JWT Authentication
 
-Backend Repository:
-
-https://booking-backend-0gma.onrender.com
 
 ---
 
@@ -290,41 +261,7 @@ https://booking-backend-0gma.onrender.com
 
 ---
 
-# Project Structure
 
-```
-src/
-├── api/
-├── assets/
-├── components/
-├── context/
-├── hooks/
-├── pages/
-├── routes/
-├── services/
-├── utils/
-├── App.jsx
-├── main.jsx
-└── index.css
-```
-
----
-
-# Screenshots
-
-Add screenshots here after deployment.
-
-```
-screenshots/
-├── home.png
-├── events.png
-├── seat-selection.png
-├── wallet.png
-├── bookings.png
-└── admin-dashboard.png
-```
-
----
 
 # Future Improvements
 
