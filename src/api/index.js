@@ -9,7 +9,7 @@ export const createIdempotencyKey = (prefix = 'request') => {
 };
 
 const API = axios.create({
-  baseURL: import.meta.env.VITE_API_BASE_URL || 'http://localhost:5000/api',
+  baseURL: import.meta.env.VITE_API_BASE_URL || 'https://booking-backend-0gma.onrender.com/api',
   timeout: 10000,
   withCredentials: true,
 });
@@ -73,7 +73,7 @@ API.interceptors.response.use(
       isRefreshing = true;
 
       try {
-        const refreshBaseUrl = import.meta.env.VITE_API_BASE_URL || 'http://localhost:5000/api';
+        const refreshBaseUrl = import.meta.env.VITE_API_BASE_URL || 'https://booking-backend-0gma.onrender.com/api';
         const res = await axios.post(`${refreshBaseUrl}/auth/refresh`, {}, { withCredentials: true });
         const { token } = res.data;
 
